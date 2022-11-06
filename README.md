@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Raymacmillan/Bootcamp-Testimonials-Slidere](https://github.com/Raymacmillan/Bootcamp-Testimonials-Slider)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Raymacmillan/Bootcamp-Testimonials-Slider/](https://github.com/Raymacmillan/Bootcamp-Testimonials-Slider/)
+- Live Site URL: [https://raymacmillan.github.io/Bootcamp-Testimonials-Slider/](https://raymacmillan.github.io/Bootcamp-Testimonials-Slider/)
 
 ## My process
 
