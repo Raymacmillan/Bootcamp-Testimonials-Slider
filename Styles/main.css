@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+@keyframes rotateDiv {
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes spinDiv {
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+
+    width: 100%;
+
+    padding: 20px;
+}
+
+.testimonials {
+    width: 100%;
+}
+
+.tanya_section{
+    width: 100%;
+
+    animation: rotateDiv 1.5s linear;
+}
+
+.top_images {
+
+    width: 100%;
+
+    margin-top: 50px;
+    margin-bottom: 90px;
+
+    position: relative;
+}
+
+img[alt="pattern-bg"]{
+    width: 100%;
+}
+
+img[alt="tanya"] ,img[alt="john"]{
+    width: 250px;
+
+    box-shadow: 1px 25px 200px hsl(240, 18%, 77%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    border-radius: 5px;
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+.John_section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation: rotateDiv 1.5s linear;
+
+    
+}
+
+.show_john_section{
+    display: flex;
+}
+
+.hide_tanya_section {
+    display: none;
+}
+
+.arrows  {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+
+    transform: translate(-50%, 0);
+
+    display: flex;
+    place-content: center space-between;
+    
+    background: white;
+    box-shadow: 0 2px 2px hsl(240, 18%, 77%);
+
+    border-radius: 30px;
+    padding: 13px;
+
+    
+
+    width: 90px;
+}
+
+.arrows img{
+    cursor: pointer;
+}
+
+figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    
+}
+
+img[alt="pattern-quotes"]{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+
+    transform: translate(-50%,0);
+    height: 85px;
+    width: 95px;
+}
+
+q {
+    color: hsl(240, 20%, 59%);
+    font-size: 32px;
+}
+
+h3 {
+    color: hsl(240, 38%, 20%);
+    margin-top: 20px;
+}
+
+figcaption {
+    font-size: 25px;
+    color: hsl(240, 18%, 77%);
+}
+
+img[alt="pattern-curve"]{
+    width: 100%;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 20px;
+
+    font-family: 'Inter', sans-serif;    
+}
+
+.arrows img:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .main_container {
+        height: 100vh;
+    }
+
+    .tanya_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        animation: spinDiv 2s linear;
+    }
+
+    .hide_tanya_section{
+        display: none;
+    }
+
+    .John_section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        animation: spinDiv 2s linear;
+    }
+
+    .John_section img
+    
+    figure {
+        order: 1;
+    }
+    .top_images {
+        order: 2;
+    }
+
+    img[alt="tanya"] ,img[alt="john"]{
+        width: 380px;
+        height: 360px;
+    }
+    img[alt="pattern-curve"] {
+        position: absolute;
+        bottom: -200px;
+        left: -20px;
+    }
+
+    img[alt="pattern-bg"] {
+        width: 460px;
+    }
+
+    .arrows {
+        bottom: 15px;
+    }
+}
